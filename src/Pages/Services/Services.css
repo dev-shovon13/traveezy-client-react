@@ -1,0 +1,40 @@
+.service-txt{
+    font-size: 40px;
+}
+.service-img{
+    height: 250px;
+    width: 100%;
+}
+.service-item{
+    transition: all 0.5s ease-in-out;
+}
+.service-item:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px gray;
+}
+.service-img-box{
+    position: relative;
+}
+.service-price{
+    position: absolute;
+    bottom: 0;
+    background-color: #FF4A52;
+    transition: all 0.1s ease-out;
+}
+.service-duration{
+     position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ffde4a;
+    transition: all 0.1s ease-out;
+}
+.service-item:hover .service-price{
+    transform: scale(1.1);
+}
+
+@media (max-width:992px){
+    .service-txt{
+        font-size: 30px;
+    }
+}

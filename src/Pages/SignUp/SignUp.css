@@ -1,0 +1,13 @@
+.sign-up-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/signup-bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+@media (max-width:992px) { 
+    .sign-up-bg{
+        height: 100%;
+    }
+}

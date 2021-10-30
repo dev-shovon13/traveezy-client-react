@@ -1,0 +1,49 @@
+.footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,
+    url("../../images/footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+.bg-gradiant{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+.f-courses:hover{
+    color: rgb(172, 0, 0) !important;
+    cursor: pointer;
+}
+.f-mentor:hover{
+    color: rgb(10, 89, 192) !important;
+    cursor: pointer;
+}
+.f-body:hover .f-icon{
+    color: rgb(6, 133, 38);
+}
+.f-body:hover .f-text{
+    color: rgb(145, 145, 145) !important;
+    cursor: pointer;
+}
+.icon-1:hover,.top-icon-1{
+color: #009DED;
+}
+.icon-2:hover,.top-icon-2{
+color: #1773EA;
+}
+.icon-3:hover,.top-icon-3{
+color: #F14D49;
+}
+.icon-4:hover,.top-icon-4{
+color: #0270AD;
+}
+.icon-5:hover{
+color: #F70000;
+}
+.news-letter{
+    font-size: 25px !important;
+    margin-left: -45px;
+}
+.q-link:hover{
+    color: rgb(226, 226, 226) !important;
+    font-weight: bold;
+}

@@ -1,0 +1,78 @@
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.doctor-image{
+    height: 250px;
+    width: 100%;
+}
+.doctor-img{
+	cursor:pointer;
+	position: relative;
+    overflow: hidden;
+}
+.doctor-img img{
+    width:100%;
+	transition:all 1s;
+}
+.doctor-img img:hover{
+    transform: scale(1.1);
+}
+.socialIcons {
+    position: absolute;
+    bottom: 50px;
+}
+.icon-trans{
+    border-radius: 50%;
+    font-size: 45px !important;
+	color:white;
+	display:hidden !important;
+	transition:all 0.8s;
+    padding: 8px;
+}
+
+.socialIcons .icon-trans:first-child{
+	background: #395694;
+	opacity:0;
+	transition:all 0.5s;
+}
+.socialIcons .icon-trans:nth-child(2){
+	background: #52A8E7;
+	opacity:0;
+	transition:all 0.5s;
+}
+.socialIcons .icon-trans:nth-child(3){
+	background: #D64937;
+	opacity:0;
+	transition:all 0.5s;
+}
+.socialIcons .icon-trans:last-child{
+	background: #0177B6;
+	opacity:0;
+	transition:all 0.5s;
+}
+.socialIcons .icon-trans:hover{
+	background:white;
+	color:#434245;
+}
+
+.doctor-img:hover .socialIcons .icon-trans:first-child {
+	transform:translateY(20px);
+	opacity:1;
+	transition:0.90s;
+}
+.doctor-img:hover .socialIcons .icon-trans:nth-child(2) {
+	transform:translateY(20px);
+	opacity:1;
+	transition:0.70s;
+}
+.doctor-img:hover .socialIcons .icon-trans:nth-child(3) {
+	transform:translateY(20px);
+	opacity:1;
+	transition:0.50s;
+}
+.doctor-img:hover .socialIcons .icon-trans:last-child {
+	transform:translateY(20px);
+	opacity:1;
+	transition:0.30s;
+}

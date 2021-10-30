@@ -1,0 +1,10 @@
+.blog-img{
+    cursor: pointer;
+    overflow: hidden;
+}
+.card-img{
+transition: all 0.7s;
+}
+.blog-img .card-img:hover{
+    transform: scale(1.04);
+}
