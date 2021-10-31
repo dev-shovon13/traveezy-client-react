@@ -19,6 +19,9 @@ import Blogs from './Pages/Blogs/Blogs';
 import Footer from './Pages/Footer/Footer';
 import NotFound from './Pages/NotFound/NotFound'
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
+import MyOrders from './Pages/MyOrders/MyOrders';
+import AllOrders from './Pages/AllOrders/AllOrders';
+import NewDestination from './Pages/NewDestination/NewDestination';
 
 function App() {
   return (
@@ -56,6 +59,21 @@ function App() {
           <PrivateRoute exact path="/placeOrder/:id">
             <Header />
             <PlaceOrder />
+            <Footer />
+          </PrivateRoute>
+          <PrivateRoute exact path="/myOrders">
+            <Header />
+            <MyOrders />
+            <Footer />
+          </PrivateRoute>
+          <PrivateRoute exact path="/allOrders">
+            <Header />
+            <AllOrders />
+            <Footer />
+          </PrivateRoute>
+          <PrivateRoute exact path="/addNew">
+            <Header />
+            <NewDestination />
             <Footer />
           </PrivateRoute>
           <Route path="/review">

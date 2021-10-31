@@ -14,7 +14,7 @@ const Footer = () => {
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-start px-3 text-white d-none d-md-flex pb-2">
                     <div className="col mb-3 mb-md-0">
                         <h5>CONTACT INFO</h5>
-                        <p className="w-75">Traveezy || Travel Made Easy. Start planning your dream trip today!</p>
+                        <p className="">Traveezy || Travel Made Easy</p>
                         <div className="d-flex align-items-center mb-2 f-body">
                             <FontAwesomeIcon icon={faHome} className="f-icon" />
                             <p className="ms-3 mb-0 f-text">Wari, Dhaka-1203, Bangladesh</p>

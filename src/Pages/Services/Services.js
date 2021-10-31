@@ -8,7 +8,7 @@ import './Services.css'
 const Services = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch("services.json")
+        fetch("https://traveezy.herokuapp.com/services")
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -25,7 +25,7 @@ const Services = () => {
                 </div>
                 <Row className="text-center g-4">
                     {
-                        services.map(service => <Service key={service.id} service={service} />)
+                        services.map(service => <Service key={service._id} service={service} />)
                     }
                 </Row>
             </Container>

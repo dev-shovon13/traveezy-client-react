@@ -9,7 +9,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Service = (props) => {
     const { user } = useAuth()
-    const { id, img, name, info, price, duration } = props.service
+    const { _id, img, name, info, price, duration } = props.service
 
     const notify = () => {
         if (!user.uid) {
@@ -31,7 +31,7 @@ const Service = (props) => {
                 <div className="p-4 pt-0">
                     <h5 className="fw-bold my-2">{name}</h5>
                     <p className="text-secondary text-start">{info}</p>
-                    <Link to={"/placeOrder/" + id}>
+                    <Link to={"/placeOrder/" + _id}>
                         <div className="btn btn-outline-primary" onClick={notify}><FontAwesomeIcon icon={faShoppingCart} className="me-2" />Book Now</div>
                     </Link>
                 </div>

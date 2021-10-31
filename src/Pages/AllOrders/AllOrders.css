@@ -1,0 +1,27 @@
+.bg-srv{
+    background-color: rgb(231, 231, 231);
+}
+.srv-img{
+    height: 150px;
+    width: 150px;
+}
+.radius{
+    border-radius: 10px;
+}
+.service-body{
+    position: relative;
+}
+.service-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.status{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgb(229, 241, 172);
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: rgb(99, 99, 99);
+}
