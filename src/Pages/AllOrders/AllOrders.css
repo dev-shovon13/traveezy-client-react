@@ -1,5 +1,6 @@
 .bg-srv{
     background-color: rgb(231, 231, 231);
+    height: 100vh;
 }
 .srv-img{
     height: 150px;
@@ -24,4 +25,12 @@
     border-radius: 5px;
     padding: 2px 5px;
     color: rgb(99, 99, 99);
+}
+@media (max-width: 668px) {
+    .bg-srv{
+        height: 100%;
+    }
+    .srv-img{
+    width: 200px;
+}
 }

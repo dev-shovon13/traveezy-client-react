@@ -59,8 +59,10 @@ const MyOrders = () => {
                             :
                             userServices.map(service => {
                                 return <div className="col" key={service._id}>
-                                    <div className="bg-white radius p-3 d-flex service-body">
-                                        <img src={service.img} alt="" className="img-fluid srv-img radius me-3" />
+                                    <div className="bg-white radius p-3 d-md-flex service-body">
+                                        <div className="text-center mb-2 mb-md-0">
+                                            <img src={service.img} alt="" className="img-fluid srv-img radius me-3" />
+                                        </div>
                                         <div>
                                             <h5>Name: {service.name}</h5>
                                             <p className="mb-0"><span className="fw-light">Email: </span> {service.email ? service.email : "Not Available"}</p>
