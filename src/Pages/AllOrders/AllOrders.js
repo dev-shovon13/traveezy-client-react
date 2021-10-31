@@ -74,8 +74,8 @@ const AllOrders = () => {
                     {
                         services.map(service => {
                             return <div className="col" key={service._id}>
-                                <div className="bg-white radius p-3 d-md-flex service-body">
-                                    <div className="text-center mb-2 mb-md-0">
+                                <div className="bg-white radius p-3 d-lg-flex service-body">
+                                    <div className="text-center mb-2 mb-lg-0">
                                         <img src={service.img} alt="" className="img-fluid srv-img radius me-3" />
                                     </div>
                                     <div>

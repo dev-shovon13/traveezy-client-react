@@ -45,7 +45,7 @@ const MyOrders = () => {
         })
     }
     return (
-        <div className="bg-srv">
+        <div className="bg-srv pb-5">
             <ScrollButton />
             <Helmet>
                 <title>My Orders | Traveezy</title>
@@ -53,7 +53,7 @@ const MyOrders = () => {
             </Helmet>
             <ToastContainer theme="colored" />
             <div className="container py-5">
-                <div className="row row-cols-1 row-cols-md-2 g-4">
+                <div className="row row-cols-1 row-cols-lg-2 g-4">
                     {
                         userServices.length === 0 ? <h2 className="text-center text-success w-75 mx-auto">You Have No Orders</h2>
                             :
