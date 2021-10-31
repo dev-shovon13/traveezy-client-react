@@ -18,7 +18,7 @@ const PlaceOrder = () => {
     const { id } = useParams()
     const [service, setService] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${id}`)
+        fetch(`https://traveezy.herokuapp.com/services/${id}`)
             .then(res => res.json())
             .then(data => setService(data))
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -43,7 +43,7 @@ const PlaceOrder = () => {
 
         const newService = { currentUser, name, email, title, member, date, img, status }
 
-        axios.post('http://localhost:5000/userServices', newService)
+        axios.post('https://traveezy.herokuapp.com/userServices', newService)
             .then(function (res) {
                 if (res.data.insertedId) {
                     toast.success("Placed Order Successfully")
