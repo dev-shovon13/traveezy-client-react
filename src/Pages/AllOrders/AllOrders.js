@@ -13,7 +13,7 @@ const AllOrders = () => {
         fetch("https://traveezy.herokuapp.com/userServices")
             .then(res => res.json())
             .then(data => setServices(data))
-    }, [])
+    }, [services])
 
     // delete a service
     const handleDelete = id => {
@@ -42,6 +42,25 @@ const AllOrders = () => {
         })
     }
 
+    // update order 
+    const handleApprove = (id) => {
+        const userService = []
+        services.filter(service => (service._id === id) && userService.push(service))
+        const updatedStatus = "Approved"
+        const updatedOrder = { ...userService }
+        updatedOrder.status = updatedStatus
+
+        axios.put(`https://traveezy.herokuapp.com/userServices/${id}`, updatedOrder)
+            .then(function (res) {
+                if (res.data.modifiedCount > 0) {
+                    toast.success("Updated Order Successfully")
+                }
+            })
+            .catch(function (error) {
+                toast.error(error);
+            })
+    }
+
     return (
         <div className="bg-srv">
             <ScrollButton />
@@ -54,7 +73,7 @@ const AllOrders = () => {
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     {
                         services.map(service => {
-                            return <div classname="col" key={service._id}>
+                            return <div className="col" key={service._id}>
                                 <div className="bg-white radius p-3 d-flex service-body">
                                     <img src={service.img} alt="" className="img-fluid srv-img radius me-3" />
                                     <div>
@@ -65,7 +84,7 @@ const AllOrders = () => {
                                         <p className="mb-0"><span className="fw-light">Date: </span> {service.date.slice(0, 10)}</p>
                                         <p className="status">{service.status}</p>
                                         <div className="service-btn">
-                                            <button className="btn btn-success btn-sm me-2" >Approve</button>
+                                            <button className="btn btn-success btn-sm me-2" onClick={() => handleApprove(service._id)} >Approve</button>
                                             <button className="btn btn-danger btn-sm " onClick={() => handleDelete(service._id)}>Cancel</button>
                                         </div>
                                     </div>

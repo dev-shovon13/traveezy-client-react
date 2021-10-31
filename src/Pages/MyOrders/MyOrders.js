@@ -58,7 +58,7 @@ const MyOrders = () => {
                         userServices.length === 0 ? <h2 className="text-center text-success w-75 mx-auto">You Have No Orders</h2>
                             :
                             userServices.map(service => {
-                                return <div classname="col" key={service._id}>
+                                return <div className="col" key={service._id}>
                                     <div className="bg-white radius p-3 d-flex service-body">
                                         <img src={service.img} alt="" className="img-fluid srv-img radius me-3" />
                                         <div>
