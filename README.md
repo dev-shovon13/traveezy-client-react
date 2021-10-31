@@ -1,6 +1,9 @@
 # Traveezy - Travel Made Easy
 
-## Project Link: [Traveezy](https://traveezy.netlify.app/home)
+## Project Live Link: [Traveezy](https://traveezy.netlify.app/home)
+
+## Client Side Code Link: [Traveezy](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-dev-shovon13)
+## Server Side Code Link: [Traveezy](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-dev-shovon13)
 
 # What I have used in this React Project
 	-➤ HTML5
