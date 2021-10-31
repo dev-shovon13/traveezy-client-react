@@ -15,6 +15,7 @@
     -➤ Node.js
     -➤ Express.js
     -➤ MongoDB
+    -➤ Heroku
 
 # Project Offerings:
 	-➤ This is a Travel Agency website which offers Many Services.
