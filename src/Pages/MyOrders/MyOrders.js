@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2'
 import { Helmet } from 'react-helmet';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
+import moment from 'moment';
 
 const MyOrders = () => {
     const { user } = useAuth()
@@ -68,7 +69,7 @@ const MyOrders = () => {
                                             <p className="mb-0"><span className="fw-light">Email: </span> {service.email ? service.email : "Not Available"}</p>
                                             <p className="mb-0"><span className="fw-light">Travel Destination: </span>{service.title}</p>
                                             <p className="mb-0"><span className="fw-light">Total Members: </span>{service.member}</p>
-                                            <p className="mb-0"><span className="fw-light">Date: </span> {service.date.slice(0, 10)}</p>
+                                            <p className="mb-0"><span className="fw-light">Date: </span> {moment(service.date).format('DD-MM-YY')}</p>
                                             <p className="status">{service.status}</p>
                                             <div className="service-btn">
                                                 <button className="btn btn-danger btn-sm" onClick={() => handleDelete(service._id)}>Cancel</button>

@@ -37,7 +37,7 @@ const PlaceOrder = () => {
         const name = nameRef.current.value
         const email = emailRef.current.value
         const member = memberRef.current.value
-        const date = startDate
+        const date = startDate.toLocaleDateString()
         const img = service.img
         const status = "Pending"
 
