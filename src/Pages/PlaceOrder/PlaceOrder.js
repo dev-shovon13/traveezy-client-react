@@ -10,6 +10,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import moment from 'moment';
+
 
 const PlaceOrder = () => {
     const [startDate, setStartDate] = useState(new Date());
@@ -37,7 +39,7 @@ const PlaceOrder = () => {
         const name = nameRef.current.value
         const email = emailRef.current.value
         const member = memberRef.current.value
-        const date = startDate.toLocaleDateString()
+        const date = moment(startDate.toLocaleDateString()).format('DD/MM/YYYY')
         const img = service.img
         const status = "Pending"
 
@@ -84,7 +86,7 @@ const PlaceOrder = () => {
                             <input type="text" className="form-control w-100 border-bottom" placeholder="Full Name" value={user.displayName || ""} ref={nameRef} />
                         </div>
                         <div className="mb-4">
-                            <input required type="text" className="form-control w-100 border-bottom" placeholder="UserName or Email" value={user.email} ref={emailRef} />
+                            <input required type="email" className="form-control w-100 border-bottom" placeholder="Email" value={user.email} ref={emailRef} />
                         </div>
                         <div className="mb-4 d-flex">
                             <DatePicker className="w-100 form-control" selected={startDate || ""} onChange={(date) => setStartDate(date)} dateFormat="dd/MM/yyyy" ref={dateRef} />

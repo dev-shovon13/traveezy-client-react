@@ -6,7 +6,6 @@ import Swal from 'sweetalert2'
 import './AllOrders.css'
 import { Helmet } from 'react-helmet';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
-import moment from 'moment';
 
 const AllOrders = () => {
     const [services, setServices] = useState([])
@@ -84,7 +83,7 @@ const AllOrders = () => {
                                         <p className="mb-0"><span className="fw-light">Email: </span> {service.email ? service.email : "Not Available"}</p>
                                         <p className="mb-0"><span className="fw-light">Travel Destination: </span>{service.title}</p>
                                         <p className="mb-0"><span className="fw-light">Total Members: </span>{service.member}</p>
-                                        <p className="mb-0"><span className="fw-light">Date: </span> {moment(service.date).format('DD-MM-YY')}</p>
+                                        <p className="mb-0"><span className="fw-light">Date: </span> {service.date}</p>
                                         <p className="status">{service.status}</p>
                                         <div className="service-btn">
                                             <button className="btn btn-success btn-sm me-2" onClick={() => handleApprove(service._id)} >Approve</button>
